@@ -1,32 +1,32 @@
 # task-board
 
 ## Description
-This Task Board application allows a team to manage project tasks. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. I modified starter code provided by UofMN Coding Bootcamp through Ed-X. I used the [Day.js](https://day.js.org/en/) library to allow work with dates.
+This Task Board application allows a team to manage project tasks and track their progress. It provides an easy-to-use interface for adding, moving, and deleting tasks, as well as color-coding tasks based on deadlines to ensure tasks are completed on time. The application is powered by HTML, CSS, JavaScript, jQuery, and the Day.js library for handling dates. The task data is stored and retrieved from localStorage, ensuring the tasks persist across page refreshes. I modified starter code provided by UofMN Coding Bootcamp through Ed-X. 
 
-....LEFT OFF EDITING HERE...
+## Key Features
+Task Organization: Tasks are grouped into three progress categories: "Not Yet Started", "In Progress", and "Completed".
+Drag and Drop: Users can drag tasks between columns to update their status.
+Persistent Data: Tasks are stored in localStorage and remain on the task board even after refreshing the page.
+Color-Coded Deadlines: Tasks are color-coded to show their urgency. If a task is nearing its deadline, it turns yellow, and if overdue, it turns red.
+Task Modal: Users can create new tasks using a modal form where they specify the task title, description, and deadline date.
+Task Deletion: Tasks can be deleted with a click of a button, removing them permanently from the task board.
+
+## Technologies Used
+HTML: Structure of the application.
+CSS: Styling and layout.
+JavaScript (ES6): Application logic.
+jQuery: DOM manipulation and event handling.
+Day.js: Handling and manipulating task deadlines.
+localStorage: Persistent data storage across page refreshes.
 
 ## Usage
-The application features two pages:
-
-Create a Blog Post: Accessible on the landing page (index.html), where users can input their username, blog title, and blog content.
-View Blog Posts: Once the form is submitted, the blog post is saved in localStorage and displayed on the posts page (blog.html). Users can toggle between light and dark modes and navigate back to create more posts.
-
-## How to Create a Blog Post:
-Open the index.html page.
-Fill in the Username, Blog Title, and Content in the form.
-Click the Submit button.
-You will be redirected to the blog posts page where you can view your post.
-
-## Key Features:
-Form Validation: The form ensures that all fields (username, title, and content) are filled out before submission.
-Blog Storage: Blog posts are stored in the browser’s localStorage, meaning your data will persist even after refreshing or closing the browser.
-Light/Dark Mode: Users can switch between light and dark mode on the posts page.
-Navigation: Users can navigate between the form page and posts page seamlessly.
+Upon opening the application, you will see columns representing tasks in different progress states: "Not Yet Started", "In Progress", and "Completed."
+To create a new task, click on the "Add Task" button. A modal will appear where you can fill in the task title, description, and deadline.
+Drag and drop tasks between columns to update their progress.
+Tasks will automatically change color based on their proximity to the deadline (yellow for nearing, red for overdue).
+To delete a task, click the "Delete" button, and the task will be permanently removed.
 
 ### Deployed site:
-https://andreacannon.github.io/blog/
+https://andreacannon.github.io/task-board/
 
-![Webpage Screenshot](assets/screenshot.png)
-
-![Webpage Screenshot](assets/scrnsht.png)
-
+![Webpage gif showing usage](assets/screenshot.gif)
